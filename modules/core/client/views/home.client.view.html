@@ -62,8 +62,8 @@
           <div class="navigation">
             <nav>
               <ul class="sf-menu">
-               <li class="current"><a href="index.html">home</a></li>
-               <li><a href="index-1.html">menu</a></li>
+               <li class="current"><a ui-sref="home">home</a></li>
+               <li><a ui-sref=".menu">menu</a></li>
                <li><a href="index-2.html">reservation</a></li>
                <li><a href="index-3.html">blog</a></li>
                <li><a href="index-4.html">contacts</a></li>
@@ -75,8 +75,9 @@
       </div>
     </div>
   </section> 
-</header>        
-
+</header>  
+      
+<div ui-view></div>
 <!--=====================
           Content
 ======================-->

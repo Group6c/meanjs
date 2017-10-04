@@ -34,6 +34,13 @@
         controllerAs: 'vm',
         css: 'modules/core/client/css/style.css'
       })
+      .state('home.menu', {
+        url: 'menu',
+        templateUrl: '/modules/core/client/views/home.menu.client.view.html',
+        controllerAs: 'vm',
+        css: 'modules/core/client/css/style.css'
+
+      })
       .state('not-found', {
         url: '/not-found',
         templateUrl: '/modules/core/client/views/404.client.view.html',
