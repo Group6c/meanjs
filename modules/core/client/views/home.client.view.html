@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/touchTouch.css">
 <script src="js/jquery.js"></script>
 <script src="js/jquery-migrate-1.1.1.js"></script>
-<script src="js/script.js"></script> 
+<script src="js/script.js"></script>
 <script src="js/superfish.js"></script>
 <script src="js/jquery.equalheights.js"></script>
 <script src="js/jquery.mobilemenu.js"></script>
@@ -27,7 +27,7 @@
   $('#stuck_container').tmStickUp({});
   $('.gallery .gall_item').touchTouch();
 
-  }); 
+  });
 </script>
 <!--[if lt IE 9]>
  <div style=' clear: both; text-align:center; position: relative;'>
@@ -58,24 +58,28 @@
           <a href="index.html">
             <img src="images/logo.png" alt="Logo alt">
           </a>
-        </h1>  
+        </h1>
           <div class="navigation">
             <nav>
               <ul class="sf-menu">
                <li class="current"><a ui-sref="home">home</a></li>
                <li><a ui-sref=".menu">menu</a></li>
-               <li><a href="index-2.html">reservation</a></li>
-               <li><a href="index-3.html">blog</a></li>
-               <li><a href="index-4.html">contacts</a></li>
+
+               <li><a ui-sref=".calendar">calendar</a></li>
+               <li><a ui-sref=".articles">articles</a></li>
+               <li><a ui-sref=".quests">quests</a></li>
+               <li><a ui-sref=".game">games</a></li>
+               <li><a ui-sref=".contact">contact us</a></li>
              </ul>
-            </nav>        
+            </nav>
             <div class="clear"></div>
           </div>
         </div>
       </div>
     </div>
-  </section> 
-</header>  
+  </section>
+</header>
+
 
 <div ui-view></div>
 <!--=====================
@@ -130,7 +134,7 @@
       <div class="grid_4">
         <div class="block1">
           <div class="count">1.</div>
-          Vivamus at magna non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a, commodo. Praesent faucibus malesuada faucibus. Donec laeet metus id laoreet malesuadarem ipsum dolor 
+          Vivamus at magna non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a, commodo. Praesent faucibus malesuada faucibus. Donec laeet metus id laoreet malesuadarem ipsum dolor
           <br>
           <a href="#" class="btn">more</a>
         </div>
@@ -138,7 +142,7 @@
       <div class="grid_4">
         <div class="block1">
           <div class="count">2.</div>
-          Dasamus at magna non nunc tristique rhoncus. Kliquam nibh ante, egestas id dictum a, commodo. Praesent faucibus malesuada faucibus. Donec laeet metus id laoreet malesuadarem ipsumer 
+          Dasamus at magna non nunc tristique rhoncus. Kliquam nibh ante, egestas id dictum a, commodo. Praesent faucibus malesuada faucibus. Donec laeet metus id laoreet malesuadarem ipsumer
           <br>
           <a href="#" class="btn">more</a>
         </div>
@@ -146,10 +150,10 @@
       <div class="grid_4">
         <div class="block1">
           <div class="count">3.</div>
-          Tervamus at magna non nunc tristique rhoncus. Oliquam nibh ante, egestas id dictum a, commodo. Iraesent faucibus malesuada faucibus. Donec laeet etus id laoreet malesuadarem ipsolo 
+          Tervamus at magna non nunc tristique rhoncus. Oliquam nibh ante, egestas id dictum a, commodo. Iraesent faucibus malesuada faucibus. Donec laeet etus id laoreet malesuadarem ipsolo
           <br>
           <a href="#" class="btn">more</a>
-        </div>        
+        </div>
       </div>
       <div class="grid_12">
         <div class="box">
@@ -219,7 +223,7 @@
 <footer id="footer">
   <div class="container">
     <div class="row">
-      <div class="grid_12">  
+      <div class="grid_12">
         <div class="socials">
           <a href="#" class="fa fa-twitter"></a>
           <a href="#" class="fa fa-facebook"></a>
@@ -230,8 +234,7 @@
         </div>
       </div>
     </div>
-  </div> 
-</footer> 
+  </div>
+</footer>
 </body>
 </html>
-
