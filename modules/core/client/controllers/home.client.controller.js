@@ -5,7 +5,7 @@
     .module('core')
     .controller('HomeController', HomeController);
 
-  function HomeController() {
+  function HomeController($rootScope) {
     var vm = this;
   }
 }());
