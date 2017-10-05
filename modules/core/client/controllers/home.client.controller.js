@@ -5,9 +5,7 @@
     .module('core')
     .controller('HomeController', HomeController);
 
-  function HomeController($scope, $location) {
-    $scope.currentPath = $location.path();
-    console.log($location.path());
+  function HomeController($rootScope) {
     var vm = this;
   }
 }());

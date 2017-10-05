@@ -3,7 +3,13 @@
 
   angular
     .module('core.routes')
-    .config(routeConfig);
+    .config(routeConfig)
+    .run(function ($rootScope, $location) {
+      $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
+        $rootScope.currentPath = toState.url;
+        console.log(toState);
+      });
+    });
 
   routeConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 
