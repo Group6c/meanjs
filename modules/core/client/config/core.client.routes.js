@@ -7,7 +7,7 @@
     .run(function ($rootScope, $location) {
       $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
         $rootScope.currentPath = toState.url;
-        console.log(toState);
+        //console.log(toState);
       });
     });
 
