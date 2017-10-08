@@ -69,31 +69,12 @@
                <li><a ui-sref=".articles">articles</a></li>
                <li><a ui-sref=".quests">quests</a></li>
                <li><a ui-sref=".game">games</a></li>
-               <li><a ui-sref=".sponsor">sponsor</a></li>
+               <li><a href="/sponsor">sponsors</a></li>
                <li><a ui-sref=".contact">contact us</a></li>
                
                
              </ul>
-             <ul ng-hide="vm.authentication.user">
-             <li><a ui-sref="authentication.signup">Sign Up</a></li>
-               <li><a ui-sref="authentication.signin">Sign In</a></li>
-             </ul>
-             <ul ng-show="vm.authentication.user">
-              <li><a href="/api/auth/signout" target="_self">Signout</a></li>
-      <!-- <li class="dropdown" uib-dropdown>
-        <a class="dropdown-toggle user-header-dropdown-toggle" uib-dropdown-toggle role="button">
-          <img ng-src="{{vm.authentication.user.profileImageURL}}" alt="{{vm.authentication.user.displayName}}" class="header-profile-image" />
-          <span ng-bind="vm.authentication.user.displayName"></span> <b class="caret"></b>
-        </a>
-        <ul class="dropdown-menu" role="menu">
-          <li ui-sref-active="active" ng-repeat="item in vm.accountMenu.items">
-            <a ui-sref="{{item.state}}" ng-bind="item.title"></a>
-          </li>
-          <li class="divider"></li>
-          <li>
-            <a href="/api/auth/signout" target="_self">Signout</a>
-          </li> -->
-        </ul>
+             
             </nav>
             <div class="clear"></div>
           </div>

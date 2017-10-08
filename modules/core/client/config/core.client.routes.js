@@ -75,13 +75,6 @@
         css: 'modules/core/client/css/style.css'
 
       })
-      .state('home.sponsor', {
-        url: 'sponsor',
-        templateUrl: '/modules/core/client/views/home.sponsor.client.view.html',
-        controllerAs: 'vm',
-        css: 'modules/core/client/css/style.css'
-
-      })
       .state('home.contact', {
         url: 'contact',
         templateUrl: '/modules/core/client/views/home.contact.client.view.html',
