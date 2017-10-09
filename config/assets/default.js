@@ -21,7 +21,10 @@ module.exports = {
       tests: ['public/lib/angular-mocks/angular-mocks.js']
     },
     css: [
-      'modules/*/client/css/*.css'
+      'modules/*/client/css/*.css',
+      'css/stuck.css',
+      'css/style.css',
+      'css/touchTouch.css'
     ],
     less: [
       'modules/*/client/less/*.less'
@@ -33,7 +36,17 @@ module.exports = {
       'modules/core/client/app/config.js',
       'modules/core/client/app/init.js',
       'modules/*/client/*.js',
-      'modules/*/client/**/*.js'
+      'modules/*/client/**/*.js',
+      'js/jquery.js',
+      'js/jquery-migrate-1.1.1.js',
+      'js/script.js',
+      'js/superfish.js',
+      'js/jquery.equalheights.js',
+      'js/jquery.mobilemenu.js',
+      'js/jquery.easing.1.3.js',
+      'js/tmStickUp.js',
+      'js/jquery.ui.totop.js',
+      'js/touchTouch.jquery.js'
     ],
     views: ['modules/*/client/views/**/*.html'],
     templates: ['build/templates.js']
