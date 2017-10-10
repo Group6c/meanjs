@@ -15,4 +15,3 @@
     if ($stateParams.message) vm.errorMessage = $stateParams.message;
   }
 }());
-

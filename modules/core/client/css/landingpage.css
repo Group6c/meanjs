@@ -60,19 +60,19 @@ body{
       text-decoration: none;*/
 }
 
-.dropdown-content {
+.dropdown {
     display: none;
     position: middle;
-    color: white;
+    color: black;
     min-width: 160px;
 
 }
-.Bt:hover .dropdown-content {
-    display: block;
 
-}
 .Bt:hover{
       color: #add8e6;
       border: solid: #fff 3px;
        border: none;
+}
+.Btt:hover .dropdown{
+      display: block;
 }
