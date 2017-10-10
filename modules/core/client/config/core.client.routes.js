@@ -3,13 +3,7 @@
 
   angular
     .module('core.routes')
-    .config(routeConfig)
-    .run(function ($rootScope, $location) {
-      $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
-        $rootScope.currentPath = toState.url;
-        //console.log(toState);
-      });
-    });
+    .config(routeConfig);
 
   routeConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 
@@ -34,57 +28,22 @@
 
     $stateProvider
       .state('home', {
-        url: '/',
+        url: '/home',
         templateUrl: '/modules/core/client/views/home.client.view.html',
         controller: 'HomeController',
         controllerAs: 'vm',
         css: 'modules/core/client/css/style.css'
       })
+      .state('landing', {
+        url: '/',
+        templateUrl: '/modules/core/client/views/landing.html',
+        controller: 'LandingController',
+        controllerAs: 'vm',
+        css: 'modules/core/client/css/landingpage.css'
+      })
       .state('home.menu', {
         url: 'menu',
         templateUrl: '/modules/core/client/views/home.menu.client.view.html',
-        controllerAs: 'vm',
-        css: 'modules/core/client/css/style.css'
-
-      })
-      .state('home.calendar', {
-        url: 'calendar',
-        templateUrl: '/modules/core/client/views/home.calendar.client.view.html',
-        controllerAs: 'vm',
-        css: 'modules/core/client/css/style.css'
-
-      })
-      .state('home.articles', {
-        url: 'articles',
-        templateUrl: '/modules/core/client/views/home.articles.client.view.html',
-        controllerAs: 'vm',
-        css: 'modules/core/client/css/style.css'
-
-      })
-      .state('home.quests', {
-        url: 'quests',
-        templateUrl: '/modules/core/client/views/home.quests.client.view.html',
-        controllerAs: 'vm',
-        css: 'modules/core/client/css/style.css'
-
-      })
-      .state('home.game', {
-        url: 'game',
-        templateUrl: '/modules/core/client/views/home.game.client.view.html',
-        controllerAs: 'vm',
-        css: 'modules/core/client/css/style.css'
-
-      })
-      .state('home.sponsor', {
-        url: 'sponsor',
-        templateUrl: '/modules/core/client/views/home.sponsor.client.view.html',
-        controllerAs: 'vm',
-        css: 'modules/core/client/css/style.css'
-
-      })
-      .state('home.contact', {
-        url: 'contact',
-        templateUrl: '/modules/core/client/views/home.contact.client.view.html',
         controllerAs: 'vm',
         css: 'modules/core/client/css/style.css'
 
